@@ -8,7 +8,7 @@ A docker image running Debian Linux (Buster) providing [Archivemail](http://arch
 Use exactly like you would use the non dockerized Archivemail. See it's documentation.
 
 For example:
-`docker run -ti --rm jgeusebroek/archivemail imaps://username:password@server/mailbox`
+`docker run --rm -ti -v $PWD:/archive jgeusebroek/archivemail -o /archive --copy imaps://username:optionalpwd@server/"Some Folder"/mailbox`
 
 ## License
 
